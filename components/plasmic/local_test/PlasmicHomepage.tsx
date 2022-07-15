@@ -34,12 +34,12 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { CartesianChart } from "../../../../components/composed-chart"; // plasmic-import: QE3YVL0VzQ/codeComponent
+import { Chart } from "../../../../components/AreaChart"; // plasmic-import: jFWdfe-nU3/codeComponent
 import { Tooltip } from "recharts"; // plasmic-import: nwS_5mt7dU/codeComponent
 import { YAxis } from "recharts"; // plasmic-import: -tu0_6Szpl/codeComponent
 import { XAxis } from "recharts"; // plasmic-import: fMuVWIgbpE/codeComponent
 import { Area } from "recharts"; // plasmic-import: XL9Zn0bkiN/codeComponent
-import { LineChart } from "../../../../components/line-chart"; // plasmic-import: UZIBi4vydE/codeComponent
+import { LineChart } from "recharts"; // plasmic-import: UZIBi4vydE/codeComponent
 import { Bar } from "recharts"; // plasmic-import: ScPI9Fe2C5/codeComponent
 import { Legend } from "recharts"; // plasmic-import: u-O-0Kdrgu/codeComponent
 import { CartesianGrid } from "recharts"; // plasmic-import: UF7W_shDaO/codeComponent
@@ -62,7 +62,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   responsiveContainer?: p.Flex<"div">;
-  cartesianChart?: p.Flex<typeof CartesianChart>;
+  cartesianChart?: p.Flex<typeof Chart>;
   tooltip?: p.Flex<typeof Tooltip>;
   yAxis?: p.Flex<typeof YAxis>;
   xAxis?: p.Flex<typeof XAxis>;
@@ -130,7 +130,7 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-override={overrides.responsiveContainer}
               className={classNames(projectcss.all, sty.responsiveContainer)}
             >
-              <CartesianChart
+              <Chart
                 data-plasmic-name={"cartesianChart"}
                 data-plasmic-override={overrides.cartesianChart}
                 className={classNames("__wab_instance", sty.cartesianChart)}
@@ -225,7 +225,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   strokeDasharray={"4 4" as const}
                   vertical={false}
                 />
-              </CartesianChart>
+              </Chart>
             </div>
           ) : null}
         </p.Stack>
@@ -286,7 +286,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   responsiveContainer: "div";
-  cartesianChart: typeof CartesianChart;
+  cartesianChart: typeof Chart;
   tooltip: typeof Tooltip;
   yAxis: typeof YAxis;
   xAxis: typeof XAxis;

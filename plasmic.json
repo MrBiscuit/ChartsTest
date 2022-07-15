@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -48,7 +48,8 @@
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
@@ -192,7 +193,8 @@
           "name": "Rate",
           "componentImportPath": "antd/lib/rate"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "eUgrinJK8Vbi9oGvjJsdgA",
@@ -251,19 +253,19 @@
           "componentImportPath": "recharts"
         },
         {
-          "id": "QE3YVL0VzQ",
-          "name": "CartesianChart",
-          "componentImportPath": "../components/composed-chart"
-        },
-        {
           "id": "UZIBi4vydE",
           "name": "LineChart",
-          "componentImportPath": "../components/line-chart"
+          "componentImportPath": "recharts"
         },
         {
           "id": "u-O-0Kdrgu",
           "name": "Legend",
           "componentImportPath": "recharts"
+        },
+        {
+          "id": "jFWdfe-nU3",
+          "name": "Chart",
+          "componentImportPath": "../components/AreaChart"
         }
       ]
     }
